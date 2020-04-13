@@ -4,45 +4,49 @@
     "keywords": ["laravel","search","fuzzy"],
     "license": "MIT",
     "authors": [
-        {
-            "name": "Tom Lingham",
-            "email": "tjlingham@gmail.com"
-        }
+      {
+        "name": "Tom Lingham",
+        "email": "tjlingham@gmail.com"
+      },
+      {
+        "name": "Rouven Alexander Rieker",
+        "email": "therouv@gmail.com"
+      }
     ],
     "require": {
-        "php": "^5.5.9 || ^7.0",
-        "illuminate/support": "^5.1 || ^6.0 || ^7.0"
+      "php": "^7.2",
+      "illuminate/support": "^7.0"
     },
     "require-dev": {
-        "graham-campbell/testbench": "^3.4 || ^4.0 || ^5.0",
-        "phpunit/phpunit": "^4.8 || ^5.7 || ^6.3 || ^7.0"
+      "graham-campbell/testbench": "^5.4",
+      "phpunit/phpunit": "^8.5"
     },
     "autoload": {
-        "psr-4": {
-            "TomLingham\\Searchy\\": "src/"
-        }
+      "psr-4": {
+        "TomLingham\\Searchy\\": "src/"
+      }
     },
     "autoload-dev": {
-        "psr-4": {
-            "TomLingham\\Tests\\Searchy\\": "tests/"
-        }
+      "psr-4": {
+        "TomLingham\\Tests\\Searchy\\": "tests/"
+      }
     },
     "config": {
-        "preferred-install": "dist"
+      "preferred-install": "dist"
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "3.0-dev"
-        },
-        "laravel": {
-            "providers": [
-                "TomLingham\\Searchy\\SearchyServiceProvider"
-            ],
-            "aliases": {
-                "Searchy": "TomLingham\\Searchy\\Facades\\Searchy"
-            }
+      "branch-alias": {
+        "dev-master": "3.0-dev"
+      },
+      "laravel": {
+        "providers": [
+          "TomLingham\\Searchy\\SearchyServiceProvider"
+        ],
+        "aliases": {
+          "Searchy": "TomLingham\\Searchy\\Facades\\Searchy"
         }
+      }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
-}
+  }
